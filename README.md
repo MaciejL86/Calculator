@@ -12,7 +12,7 @@ Scientific / Dark |  Standard / Colored
 ![Calculator - screenshot](screenshots/dark.PNG) | ![Calculator - screenshot](screenshots/colored.PNG)
 
 ### Requirements 🔧
-* Java version 8 or higher.
+* Java version 8 or higher!
 
 ### Installation 🔌
 1. Press the **Fork** button (top right the page) to save copy of this project on your account.

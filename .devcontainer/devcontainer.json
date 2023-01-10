@@ -1,0 +1,16 @@
+//devcontainer.json
+{
+  "name": "Calculator Dev",
+  "dockerFile": "../Dockerfile",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+
+      "extensions": ["dbaeumer.vscode-eslint", "redhat.vscode-xml"]
+    }
+  }
+
+}

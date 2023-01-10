@@ -9,7 +9,10 @@
         "terminal.integrated.defaultProfile.linux": "bash"
       },
 
-      "extensions": ["dbaeumer.vscode-eslint", "redhat.vscode-xml", "vscjava.vscode-java-pack"]
+      "extensions": ["dbaeumer.vscode-eslint", 
+                     "redhat.vscode-xml", 
+                     "vscjava.vscode-java-pack",
+                     "davidanson.vscode-markdownlint" ]
     }
   }
 

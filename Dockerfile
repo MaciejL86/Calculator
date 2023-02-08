@@ -1,10 +1,8 @@
 FROM ubuntu
 
-RUN apt update && apt install -y maven git curl && \
-    curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
-    sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-#    chmod +x kubectl
-
-RUN PATH=$PATH:~/.local/bin
+RUN apt update && apt install -y maven git curl
+RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+RUN sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+RUN chmod +x kubectl
 
 ENTRYPOINT ["java", "--version"]

@@ -1,8 +1,8 @@
 FROM ubuntu
 
-RUN apt update && apt install -y maven git curl
-RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-RUN sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-RUN chmod +x kubectl
+RUN apt update && apt install -y maven git ca-certificates curl
+RUN curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+RUN echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | tee /etc/apt/sources.list.d/kubernetes.list
+RUN apt-get update && apt-get install -y kubectl
 
 ENTRYPOINT ["java", "--version"]

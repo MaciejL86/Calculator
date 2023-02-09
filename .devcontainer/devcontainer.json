@@ -6,14 +6,15 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.autoSave": "afterDelay"
       },
 
       "extensions": ["dbaeumer.vscode-eslint", 
                      "redhat.vscode-xml", 
                      "vscjava.vscode-java-pack",
-                     "davidanson.vscode-markdownlint" ]
+                     "davidanson.vscode-markdownlint",
+                     "ms-kubernetes-tools.vscode-kubernetes-tools" ]
     }
   }
-
 }
